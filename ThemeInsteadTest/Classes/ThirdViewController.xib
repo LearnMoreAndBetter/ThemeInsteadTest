@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIN-Vc-86G">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="夏威夷风情"/>
+                    <connections>
+                        <action selector="blueThemeAction:" destination="-1" eventType="touchUpInside" id="oi8-ij-dQS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehu-1U-38J">
+                    <state key="normal" title="落叶风情">
+                        <color key="titleColor" red="0.93725490199999995" green="0.53725490200000003" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="yellowThemeAction:" destination="-1" eventType="touchUpInside" id="y0Q-p2-CON"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h0-zA-sm5">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqh-rk-mR9">
+                    <state key="normal" title="巴西风情">
+                        <color key="titleColor" red="1" green="0.17390948245362425" blue="0.035566902119655963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="redThemeAction:" destination="-1" eventType="touchUpInside" id="opE-dg-HCR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ehu-1U-38J" firstAttribute="top" secondItem="eIN-Vc-86G" secondAttribute="bottom" constant="20" id="NI8-HX-Bpy"/>
+                <constraint firstItem="eIN-Vc-86G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="aNw-KH-kQ4"/>
+                <constraint firstItem="2h0-zA-sm5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="cUW-0R-8cC"/>
+                <constraint firstItem="Fqh-rk-mR9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="kk4-mS-kqH"/>
+                <constraint firstItem="Ehu-1U-38J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="r4v-w8-6wT"/>
+                <constraint firstItem="Fqh-rk-mR9" firstAttribute="top" secondItem="Ehu-1U-38J" secondAttribute="bottom" constant="20" id="rX0-lz-nrc"/>
+                <constraint firstItem="2h0-zA-sm5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="tOm-lo-dXw"/>
+                <constraint firstItem="eIN-Vc-86G" firstAttribute="top" secondItem="2h0-zA-sm5" secondAttribute="bottom" constant="20" id="vlG-p7-knl"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
